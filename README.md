@@ -1,12 +1,14 @@
 # Javascript Topics:
-- Prerequisite and Intro
-- Installing VS code and getting started
+ ## Prerequisite and Intro
+  - Installing VS code and getting started
+  - Basic Knowledge of HTML and CSS
+  - Chrome Browser 
+
 - Variables  
 - External js
 - Operators
 - prompt
 - DOM
-- Length Converter
 - Math object
 - String
 - Template literals
@@ -14,13 +16,10 @@
 - 2d array 
 - Array Methods
 - If else
-- FD interest rate calculator
 - Switch
-- CityStats tool
 - Event Listener
 - Objects
 - Loops
-- Color Flipper
 - Function types
 - Callback
 - ForEach
@@ -31,14 +30,11 @@
 - Solving Leetcode Questions
 - Object Oriented Programming
 - Asynchronous Javascript
-- Digital Clock
 - Promise
 - Error Handling
 - Async and Await
 - JSON
 - Fetch API
-- Currency Converter
-- Todo List
 - Using Local Storage
 
 # Important:
@@ -61,4 +57,12 @@
 
 # Projects:
 - Celcius to Farenheit
-- 
+- Centimeter to Inches
+- word Count
+- Calculator
+- Currency Converter
+- Color Flipper
+- FD interest rate calculator
+- CityStats tool
+- Digital Clock
+- Todo List
