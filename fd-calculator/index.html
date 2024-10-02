@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FD Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[rgba(0,0,0,0.8)]">
+    <div
+      class="bg-[rgba(0,0,0,0.3)] shadwo-lg rounded-lg p-4 md:m-4 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto md:h-56 md:w-3/12"
+    >
+      <h2 class="text-center text-red-200 text-2xl mb-4">FD Calculator</h2>
+      <form class="flex flex-col gap-8" onsubmit="{(e)=> e.preventDefault()}">
+        <div>
+          <input
+            type="text"
+            name="tenure"
+            id="tenure"
+            placeholder="Enter your Tenure"
+            class="outline-none border-none p-2 rounded-lg w-full"
+          />
+        </div>
+        <div class="text-center">
+          <button
+            type="button"
+            onclick="fdCalculator()"
+            class="bg-yellow-200 p-2 rounded-lg w-full md:w-1/2"
+          >
+            Calculate Interest
+          </button>
+        </div>
+      </form>
+      <div id="result" class="text-center"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
