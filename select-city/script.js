@@ -1,17 +1,13 @@
-
 /*
 Bangalore 
  Population: 12 million
  Language: Kannada 
- 
 Chennai
  Population: 10 million
  Language: Tamil 
-
 Kerela
  Population: 35 million
  Language: Malayalam 
-
 Delhi
  Population: 20 million
  Language: Hindi 
@@ -24,7 +20,6 @@ let resultDiv = document.createElement("div");
 button.addEventListener("click", displayStates);
 function displayStates() {
     const city = input.options[input.selectedIndex].value;
-    console.log(city);
     let population;
     let language;
     switch (city) {
@@ -57,3 +52,9 @@ function displayStates() {
     resultDiv.innerHTML = result;
     wrapper.appendChild(resultDiv);
 }
+
+
+
+
+
+
