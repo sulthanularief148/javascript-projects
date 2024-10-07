@@ -51,9 +51,16 @@ function displayStates() {
             population = "unknown";
             language = "unknown";
     }
-    const result = `The city is ${city}, the population of ${city} is ${population} million people, and the primary language is ${language}.`;
+    const result = `The city is ${city}, the population of <strong>${city} </strong>is <strong>${population}</strong> million people, and the primary language is <strong>${language}</strong>.`;
+
     resultDiv.innerHTML = result;
+    resultDiv.classList.add("text-white")
     wrapper.appendChild(resultDiv);
+    const strongContents = resultDiv.querySelectorAll("strong");
+    strongContents.forEach((strong) => {
+        console.log(strong.textContent);
+        strong.classList.add("text-blue-400");
+    });
 }
 
 
