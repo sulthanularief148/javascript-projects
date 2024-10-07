@@ -1,125 +1,116 @@
 # JavaScript Topics
 
 ## Prerequisite and Intro
+
 - **Installing VS Code and Getting Started**
 - **Basic Knowledge of HTML and CSS**
 - **Chrome Browser**
 
 ## Variables
+
 - What are Variables?
 - Types of Variables: `let`, `const`, `var`
 
 ## External JS
+
 - Linking External JavaScript Files
 - Best Practices for Organizing JavaScript Code
 
 ## Operators
 
 ### Arithmetic Operators
+
 Arithmetic operators perform mathematical calculations.
 
 - **Addition (`+`)**
   - Example: `let sum = 5 + 3; // 8`
-  
 - **Subtraction (`-`)**
   - Example: `let difference = 5 - 3; // 2`
-  
 - **Multiplication (`*`)**
   - Example: `let product = 5 * 3; // 15`
-  
 - **Division (`/`)**
   - Example: `let quotient = 5 / 2; // 2.5`
-  
 - **Remainder (`%`)**
   - Example: `let remainder = 5 % 2; // 1`
-  
-- **Exponentiation (`**`)**
+- **Exponentiation (`**`)\*\*
   - Example: `let power = 2 ** 3; // 8`
 
 ### Comparison Operators
+
 Comparison operators are used to compare two values and return a Boolean (`true` or `false`).
 
 - **Equal (`==`)**
   - Example: `5 == '5'; // true (type coercion)`
-  
 - **Strict Equal (`===`)**
   - Example: `5 === '5'; // false (no type coercion)`
-  
 - **Not Equal (`!=`)**
   - Example: `5 != '5'; // false (type coercion)`
-  
 - **Strict Not Equal (`!==`)**
   - Example: `5 !== '5'; // true (no type coercion)`
-  
 - **Greater Than (`>`)**
   - Example: `5 > 3; // true`
-  
 - **Less Than (`<`)**
   - Example: `5 < 3; // false`
-  
 - **Greater Than or Equal (`>=`)**
   - Example: `5 >= 5; // true`
-  
 - **Less Than or Equal (`<=`)**
   - Example: `5 <= 3; // false`
 
 ### Logical Operators
+
 Logical operators are used to combine multiple Boolean expressions.
 
 - **AND (`&&`)**
   - Example: `true && false; // false`
-  
 - **OR (`||`)**
   - Example: `true || false; // true`
-  
 - **NOT (`!`)**
   - Example: `!true; // false`
 
 ### Assignment Operators
+
 Assignment operators are used to assign values to variables.
 
 - **Simple Assignment (`=`)**
   - Example: `let x = 5;`
-  
 - **Addition Assignment (`+=`)**
   - Example: `x += 2; // equivalent to x = x + 2;`
-  
 - **Subtraction Assignment (`-=`)**
   - Example: `x -= 2; // equivalent to x = x - 2;`
-  
 - **Multiplication Assignment (`*=`)**
   - Example: `x *= 2; // equivalent to x = x * 2;`
-  
 - **Division Assignment (`/=`)**
   - Example: `x /= 2; // equivalent to x = x / 2;`
-  
 - **Remainder Assignment (`%=`)**
   - Example: `x %= 2; // equivalent to x = x % 2;`
-  
-- **Exponentiation Assignment (`**=`)**
+- **Exponentiation Assignment (`**=`)\*\*
   - Example: `x **= 2; // equivalent to x = x ** 2;`
 
-
 ## Prompt
+
 - Using `prompt()` to Get User Input
 - Validating User Input
 
 ## Math Object
-- Common Methods: 
+
+- Common Methods:
   - `Math.round()`, `Math.floor()`, `Math.ceil()`, `Math.random()`, `Math.abs()`
-- Mathematical Constants: 
+- Mathematical Constants:
   - `Math.PI`, `Math.E`
 
 ## Data Types
+
 - **Primitive Types**
   - String, Number, Boolean, Null, Undefined, Symbol
 - **Reference Types**
   - Objects, Arrays, Functions
 
 ### Primitive Types
+
 Primitive data types are the most basic data types in JavaScript. They are immutable and stored directly in the variable.
 
 1. **String**
+
    - Represents a sequence of characters.
    - Example: `let name = "Alice";`
    - **Methods:**
@@ -143,6 +134,7 @@ Primitive data types are the most basic data types in JavaScript. They are immut
        - Example: `name.includes("li"); // true`
 
 2. **Number**
+
    - Represents both integer and floating-point numbers.
    - Example: `let age = 30;`
    - **Methods:**
@@ -158,6 +150,7 @@ Primitive data types are the most basic data types in JavaScript. They are immut
      - `Number.NaN`: Represents a value that is not a number.
 
 3. **Boolean**
+
    - Represents a logical entity and can have two values: `true` or `false`.
    - Example: `let isActive = true;`
    - **Methods:**
@@ -165,10 +158,12 @@ Primitive data types are the most basic data types in JavaScript. They are immut
        - Example: `Boolean(1); // true`
 
 4. **Null**
+
    - Represents the intentional absence of any object value.
    - Example: `let value = null;`
 
 5. **Undefined**
+
    - Indicates that a variable has been declared but not assigned a value.
    - Example: `let notAssigned; // undefined`
 
@@ -177,9 +172,11 @@ Primitive data types are the most basic data types in JavaScript. They are immut
    - Example: `let sym = Symbol("description");`
 
 ### Reference Types
+
 Reference types are objects that are more complex than primitive types. They are mutable and stored by reference.
 
 1. **Objects**
+
    - Collections of key-value pairs.
    - Example: `let person = { name: "Alice", age: 30 };`
    - **Methods:**
@@ -191,6 +188,7 @@ Reference types are objects that are more complex than primitive types. They are
        - Example: `Object.entries(person); // [["name", "Alice"], ["age", 30]]`
 
 2. **Arrays**
+
    - Ordered collections of values.
    - Example: `let fruits = ["apple", "banana", "cherry"];`
    - **Methods:**
@@ -222,8 +220,8 @@ Reference types are objects that are more complex than primitive types. They are
      - `Function.prototype.bind(thisArg, arg1, arg2, ...)`: Creates a new function that, when called, has its `this` keyword set to the provided value.
        - Example: `let boundGreet = greet.bind(null);`
 
-
 ## Template Literals
+
 - Syntax: Using backticks (`` ` ``)
 - Multiline Strings
 - String Interpolation
@@ -232,188 +230,16 @@ Reference types are objects that are more complex than primitive types. They are
 
 The DOM is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing you to manipulate its content, structure, and style.
 
-### Selecting Elements
-Selecting elements is the first step to interact with them in the DOM. Here are some common methods:
-
-1. **`getElementById(id)`**
-   - Selects an element by its unique ID.
-   - Returns a single element.
-   - Example:
-     ```javascript
-     const header = document.getElementById("header");
-     ```
-
-2. **`querySelector(selector)`**
-   - Selects the first element that matches a specified CSS selector.
-   - Can be used to select by class, type, attribute, etc.
-   - Example:
-     ```javascript
-     const firstButton = document.querySelector(".btn");
-     ```
-
-3. **`getElementsByClassName(className)`**
-   - Selects all elements with a specified class name.
-   - Returns a live HTMLCollection (automatically updates when the document changes).
-   - Example:
-     ```javascript
-     const buttons = document.getElementsByClassName("btn");
-     console.log(buttons.length); // Number of elements with class "btn"
-     ```
-
-4. **`getElementsByTagName(tagName)`**
-   - Selects all elements with the specified tag name.
-   - Also returns a live HTMLCollection.
-   - Example:
-     ```javascript
-     const paragraphs = document.getElementsByTagName("p");
-     ```
-
-5. **`querySelectorAll(selector)`**
-   - Selects all elements that match a specified CSS selector.
-   - Returns a static NodeList (does not update if the document changes).
-   - Example:
-     ```javascript
-     const allButtons = document.querySelectorAll(".btn");
-     ```
-
-### Manipulating Elements
-Once elements are selected, you can manipulate their content, style, and attributes.
-
-1. **`innerHTML`**
-   - Gets or sets the HTML content inside an element.
-   - Example:
-     ```javascript
-     const container = document.getElementById("container");
-     container.innerHTML = "<h1>Hello, World!</h1>"; // Replaces content
-     ```
-
-2. **`textContent`**
-   - Gets or sets the text content inside an element.
-   - Unlike `innerHTML`, it does not parse HTML tags.
-   - Example:
-     ```javascript
-     const title = document.getElementById("title");
-     title.textContent = "New Title"; // Updates text only
-     ```
-
-3. **`style`**
-   - Accesses the CSS styles applied to an element.
-   - You can change styles using JavaScript.
-   - Example:
-     ```javascript
-     const box = document.getElementById("box");
-     box.style.backgroundColor = "blue"; // Changes background color
-     box.style.display = "none"; // Hides the element
-     ```
-
-4. **`setAttribute(attribute, value)`**
-   - Sets a specific attribute on an element.
-   - Example:
-     ```javascript
-     const link = document.getElementById("myLink");
-     link.setAttribute("href", "https://www.example.com");
-     ```
-
-5. **`removeAttribute(attribute)`**
-   - Removes a specified attribute from an element.
-   - Example:
-     ```javascript
-     link.removeAttribute("target"); // Removes the target attribute
-     ```
-
-### Creating and Removing Elements
-You can dynamically create and remove elements from the DOM.
-
-1. **`createElement(tagName)`**
-   - Creates a new HTML element with the specified tag name.
-   - Example:
-     ```javascript
-     const newDiv = document.createElement("div");
-     newDiv.textContent = "This is a new div!";
-     ```
-
-2. **`appendChild(child)`**
-   - Adds a new child element to a specified parent element.
-   - Example:
-     ```javascript
-     const container = document.getElementById("container");
-     container.appendChild(newDiv); // Adds the new div to the container
-     ```
-
-3. **`removeChild(child)`**
-   - Removes a specified child element from a parent element.
-   - Example:
-     ```javascript
-     container.removeChild(newDiv); // Removes newDiv from the container
-     ```
-
-4. **`replaceChild(newChild, oldChild)`**
-   - Replaces an existing child element with a new child element.
-   - Example:
-     ```javascript
-     const oldDiv = document.getElementById("oldDiv");
-     const newDiv = document.createElement("div");
-     newDiv.textContent = "This is the new div!";
-     container.replaceChild(newDiv, oldDiv); // Replaces oldDiv with newDiv
-     ```
-
-### Event Handling
-Event handling allows you to execute code in response to user actions.
-
-1. **`addEventListener(type, listener)`**
-   - Attaches an event handler to an element without overwriting existing event handlers.
-   - `type` is the event type (e.g., "click", "mouseover").
-   - `listener` is the function to be executed when the event occurs.
-   - Example:
-     ```javascript
-     const button = document.getElementById("myButton");
-     button.addEventListener("click", function() {
-       alert("Button clicked!");
-     });
-     ```
-
-2. **Removing an Event Listener**
-   - You can remove an event listener using `removeEventListener(type, listener)`, but you must use the same function reference.
-   - Example:
-     ```javascript
-     function handleClick() {
-       alert("Button clicked!");
-     }
-     button.addEventListener("click", handleClick);
-     // Later, to remove:
-     button.removeEventListener("click", handleClick);
-     ```
-
-3. **Event Object**
-   - When an event occurs, an event object is created and passed to the event handler. This object contains information about the event.
-   - Example:
-     ```javascript
-     button.addEventListener("click", function(event) {
-       console.log(event); // Logs the event object
-       console.log(event.target); // Logs the element that triggered the event
-     });
-     ```
-
-4. **Event Delegation**
-   - You can add a single event listener to a parent element to manage events for multiple child elements.
-   - Example:
-     ```javascript
-     const list = document.getElementById("myList");
-     list.addEventListener("click", function(event) {
-       if (event.target.tagName === "LI") {
-         alert("List item clicked: " + event.target.textContent);
-       }
-     });
-     ```
-
 ## DOM (Document Object Model)
 
 The DOM is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing you to manipulate its content, structure, and style.
 
 ### Selecting Elements
+
 Selecting elements is the first step to interact with them in the DOM. Here are some common methods:
 
 1. **`getElementById(id)`**
+
    - Selects an element by its unique ID.
    - Returns a single element.
    - Example:
@@ -422,6 +248,7 @@ Selecting elements is the first step to interact with them in the DOM. Here are 
      ```
 
 2. **`querySelector(selector)`**
+
    - Selects the first element that matches a specified CSS selector.
    - Can be used to select by class, type, attribute, etc.
    - Example:
@@ -430,6 +257,7 @@ Selecting elements is the first step to interact with them in the DOM. Here are 
      ```
 
 3. **`getElementsByClassName(className)`**
+
    - Selects all elements with a specified class name.
    - Returns a live HTMLCollection (automatically updates when the document changes).
    - Example:
@@ -439,6 +267,7 @@ Selecting elements is the first step to interact with them in the DOM. Here are 
      ```
 
 4. **`getElementsByTagName(tagName)`**
+
    - Selects all elements with the specified tag name.
    - Also returns a live HTMLCollection.
    - Example:
@@ -455,9 +284,11 @@ Selecting elements is the first step to interact with them in the DOM. Here are 
      ```
 
 ### Manipulating Elements
+
 Once elements are selected, you can manipulate their content, style, and attributes.
 
 1. **`innerHTML`**
+
    - Gets or sets the HTML content inside an element.
    - Example:
      ```javascript
@@ -466,6 +297,7 @@ Once elements are selected, you can manipulate their content, style, and attribu
      ```
 
 2. **`textContent`**
+
    - Gets or sets the text content inside an element.
    - Unlike `innerHTML`, it does not parse HTML tags.
    - Example:
@@ -475,6 +307,7 @@ Once elements are selected, you can manipulate their content, style, and attribu
      ```
 
 3. **`style`**
+
    - Accesses the CSS styles applied to an element.
    - You can change styles using JavaScript.
    - Example:
@@ -485,6 +318,7 @@ Once elements are selected, you can manipulate their content, style, and attribu
      ```
 
 4. **`setAttribute(attribute, value)`**
+
    - Sets a specific attribute on an element.
    - Example:
      ```javascript
@@ -500,9 +334,11 @@ Once elements are selected, you can manipulate their content, style, and attribu
      ```
 
 ### Creating and Removing Elements
+
 You can dynamically create and remove elements from the DOM.
 
 1. **`createElement(tagName)`**
+
    - Creates a new HTML element with the specified tag name.
    - Example:
      ```javascript
@@ -511,6 +347,7 @@ You can dynamically create and remove elements from the DOM.
      ```
 
 2. **`appendChild(child)`**
+
    - Adds a new child element to a specified parent element.
    - Example:
      ```javascript
@@ -519,6 +356,7 @@ You can dynamically create and remove elements from the DOM.
      ```
 
 3. **`removeChild(child)`**
+
    - Removes a specified child element from a parent element.
    - Example:
      ```javascript
@@ -536,21 +374,24 @@ You can dynamically create and remove elements from the DOM.
      ```
 
 ### Event Handling
+
 Event handling allows you to execute code in response to user actions.
 
 1. **`addEventListener(type, listener)`**
+
    - Attaches an event handler to an element without overwriting existing event handlers.
    - `type` is the event type (e.g., "click", "mouseover").
    - `listener` is the function to be executed when the event occurs.
    - Example:
      ```javascript
      const button = document.getElementById("myButton");
-     button.addEventListener("click", function() {
+     button.addEventListener("click", function () {
        alert("Button clicked!");
      });
      ```
 
 2. **Removing an Event Listener**
+
    - You can remove an event listener using `removeEventListener(type, listener)`, but you must use the same function reference.
    - Example:
      ```javascript
@@ -563,10 +404,11 @@ Event handling allows you to execute code in response to user actions.
      ```
 
 3. **Event Object**
+
    - When an event occurs, an event object is created and passed to the event handler. This object contains information about the event.
    - Example:
      ```javascript
-     button.addEventListener("click", function(event) {
+     button.addEventListener("click", function (event) {
        console.log(event); // Logs the event object
        console.log(event.target); // Logs the element that triggered the event
      });
@@ -577,7 +419,7 @@ Event handling allows you to execute code in response to user actions.
    - Example:
      ```javascript
      const list = document.getElementById("myList");
-     list.addEventListener("click", function(event) {
+     list.addEventListener("click", function (event) {
        if (event.target.tagName === "LI") {
          alert("List item clicked: " + event.target.textContent);
        }
@@ -585,50 +427,57 @@ Event handling allows you to execute code in response to user actions.
      ```
 
 ### Summary
+
 The DOM provides a powerful way to interact with web documents. By selecting, manipulating, creating, and handling events on elements, you can build dynamic and interactive web applications.
 
 Feel free to ask if you need further details or examples on any specific section!
 
-
-
 ## Arrays
+
 - Creating Arrays
 - Accessing and Modifying Elements
 - Common Array Methods:
   - `push()`, `pop()`, `shift()`, `unshift()`, `splice()`, `slice()`
 
 ## 2D Arrays
+
 - Creating 2D Arrays
 - Accessing Elements
 - Iterating Through 2D Arrays
 
 ## Array Methods
+
 - **ForEach**
 - **Map**
 - **Filter**
 - **Reduce**
 
 ## If Else
+
 - Basic Syntax
 - Nested If Statements
 - Ternary Operator
 
 ## Switch
+
 - Basic Syntax
 - Use Cases and Examples
 
 ## Event Listener
+
 - Adding Event Listeners
 - Removing Event Listeners
 - Event Object
 
 ## Objects
+
 - Creating Objects
 - Accessing and Modifying Properties
 - Methods in Objects
 - Object Destructuring
 
 ## Loops
+
 - **For Loop**
 - **While Loop**
 - **Do While Loop**
@@ -636,23 +485,28 @@ Feel free to ask if you need further details or examples on any specific section
 - **For...in Loop**
 
 ## Function Types
+
 - **Function Declarations**
 - **Function Expressions**
 - **Arrow Functions**
 
 ## Callback
+
 - Definition and Use Cases
 - Passing Functions as Arguments
 
 ## Returning Functions and Closure
+
 - Understanding Closures
 - Practical Examples of Closures
 
 ## Memory Allocation
+
 - How JavaScript Allocates Memory
 - Garbage Collection
 
 ## Set and Map
+
 - **Set**
   - Creating Sets
   - Common Methods: `add()`, `delete()`, `has()`
@@ -661,73 +515,84 @@ Feel free to ask if you need further details or examples on any specific section
   - Common Methods: `set()`, `get()`, `delete()`
 
 ## Solving LeetCode Questions
+
 - Tips for Approaching Coding Challenges
 - Common Patterns to Recognize
 
 ## Object-Oriented Programming
+
 - Classes and Instances
 - Inheritance
 - Encapsulation
 - Polymorphism
 
 ## Asynchronous JavaScript
+
 - Understanding the Event Loop
 - Callbacks vs Promises
 
 ## Promise
+
 - Creating Promises
 - Handling Promise States: `then()`, `catch()`, `finally()`
 - Chaining Promises
 
 ## Error Handling
+
 - Using `try...catch`
 - Custom Error Handling
 
 ## Async and Await
+
 - Syntax and Usage
 - Converting Promises to Async/Await
 
 ## JSON
+
 - Parsing JSON: `JSON.parse()`
 - Stringifying Objects: `JSON.stringify()`
 
 ## Fetch API
+
 - Making GET and POST Requests
 - Handling Responses
 - Error Handling with Fetch
 
 ## Using Local Storage
+
 - Storing Data: `localStorage.setItem()`
 - Retrieving Data: `localStorage.getItem()`
 - Removing Data: `localStorage.removeItem()`
 
-
 # Important:
- - How Javascript works
- - How javascript code is executed
- - Hoisting in javascript
- - How functions work in javascript
- - undefined and not defined n javascript
- - The scope chain & lexical Environment
- - let and const in javascript
- - Block scope & shadowing in javascript
- - Closures  in javascript
- - First class function
- - Callback functions in javascript
- - Asyncronous  javascript & Event Loop
- - Higher order function
- - map, filter & reduce in javascript
- - setTimeout
- - async & await
+
+- How Javascript works
+- How javascript code is executed
+- Hoisting in javascript
+- How functions work in javascript
+- undefined and not defined n javascript
+- The scope chain & lexical Environment
+- let and const in javascript
+- Block scope & shadowing in javascript
+- Closures in javascript
+- First class function
+- Callback functions in javascript
+- Asyncronous javascript & Event Loop
+- Higher order function
+- map, filter & reduce in javascript
+- setTimeout
+- async & await
 
 # Projects:
-- Celcius to Farenheit
-- Centimeter to Inches
-- word Count
-- Calculator
+
+- Celcius to Farenheit - Done
+- Centimeter to Inches - Done
+- word Count - Done
+- FD interest rate calculator - Done
+- Select States
+- Basic Calculator Using Vanilla Js without HTML
+- Job Eligibility Checker
 - Currency Converter
 - Color Flipper
-- FD interest rate calculator
-- CityStats tool
 - Digital Clock
 - Todo List

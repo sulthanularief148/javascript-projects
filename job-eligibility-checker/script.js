@@ -17,7 +17,6 @@ document.addEventListener("click", () => {
                 default:
                     result = "Please select your education level";
                     break;
-
             }
         }
     });
