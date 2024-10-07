@@ -14,6 +14,9 @@ Delhi
 */
 
 const input = document.getElementById("city");
+const optionValue = input.options;
+input.style.backgroundColor = "rgba(0,0,0,0.1)";
+input.style.backDropFilter = "blur(20px)"
 const button = document.querySelector("button");
 const wrapper = document.getElementById("wrapper");
 let resultDiv = document.createElement("div");

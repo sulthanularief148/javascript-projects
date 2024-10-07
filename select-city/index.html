@@ -6,16 +6,28 @@
     <title>City Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div id="wrapper">
-      <select name="city" id="city">
+  <body class="bg-[rgba(0,0,0,0.8)] font-sans font-poppins">
+    <div
+      id="wrapper"
+      class="absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 bg-[rgba(200,200,200,0.6)] w-full md:w-3/12 p-8 md:m-4 flex flex-col gap-8 rounded-xl shadow-2xl justify-center text-center"
+    >
+      <select
+        name="city"
+        id="city"
+        class="h-8 outline-none border-none rounded-md p-1 focus:border-gray-600 bg-[rgba((0,0,0,0.1))]"
+      >
+        <option disabled selected class="text-grey">Select the value</option>
         <option value="Bangalore">Bangalore</option>
         <option value="Chennai">Chennai</option>
         <option value="Kerela">Kerela</option>
         <option value="Delhi">Delhi</option>
       </select>
       <div>
-        <button>Show details</button>
+        <button
+          class="bg-[rgba(150,48,69,0.5)] p-2 w-2/12 md:w-6/12 rounded-3xl hover:bg-[rgba(15,69,78,0.8)] transition-all ease-linear duration-200"
+        >
+          Show details
+        </button>
       </div>
     </div>
 
