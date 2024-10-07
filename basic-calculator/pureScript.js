@@ -65,16 +65,11 @@ const value2 = createInputField("second-num", "Enter The  Number...", "num2");
 // value1.addEventListener('input', () => console.log(Number(value1.value)));
 // value2.addEventListener('input', () => console.log(Number(value2.value)));
 
-
-
-
 // Result display
 const resultDisplay = document.createElement("div");
 resultDisplay.id = "result";
 resultDisplay.classList.add("mt-4", "text-lg", "font-semibold");
 calculatorWrapper.appendChild(resultDisplay);
-
-
 
 const calculator = () => {
     const num1 = Number(value1.value);
