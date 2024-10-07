@@ -246,16 +246,45 @@ else
   console.log("You are not eligible for roller coaster ride")
 
 
-// Fixed Deposit calculator
+const videoElement = document.getElementById("videoElement");
 
-/*
-A: is the maturity amount 
-P: is the principal amount 
-r: is the interest rate in decimals 
-n: is the number of times interest is calculated in a year 
-t: is the number of years
+// if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+//     navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+//         .then(stream => {
+//             videoElement.srcObject = stream;
+//         })
+//         .catch(error => {
+//             console.error("Error accessing webcam:", error);
+//         });
+// } else {
+//     console.error("Browser does not support mediaDevices");
+//     alert("Your browser does not support webcam access. Please try a different browser.");
+// }
 
-*/
-function fdCalculator() {
-  
-}
+// Prefer camera resolution nearest to 1280x720.
+// const constraints = {
+//   audio: true,
+//   video: { width: 1280, height: 720 },
+// };
+
+// navigator.mediaDevices
+//   .getUserMedia(constraints)
+//   .then((mediaStream) => {
+
+//     videoElement.srcObject = mediaStream;
+//     videoElement.onloadedmetadata = () => {
+//       videoElement.play();
+//     };
+//   })
+//   .catch((err) => {
+
+//     console.error(`${err.name}: ${err.message}`);
+//   });
+
+
+
+
+
+
+
+
