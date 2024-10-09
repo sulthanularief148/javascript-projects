@@ -1,18 +1,3 @@
-/*
-Bangalore 
- Population: 12 million
- Language: Kannada 
-Chennai
- Population: 10 million
- Language: Tamil 
-Kerela
- Population: 35 million
- Language: Malayalam 
-Delhi
- Population: 20 million
- Language: Hindi 
-*/
-
 const input = document.getElementById("city");
 const optionValue = input.options;
 input.style.backgroundColor = "rgba(0,0,0,0.1)";

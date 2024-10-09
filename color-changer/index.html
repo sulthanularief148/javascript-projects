@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Changer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    header {
+      font-family: "Edu AU VIC WA NT Dots", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+  <body>
+    <header class="flex justify-between m-4 p-4 text-2xl">
+      <h2 id="flipper">Color Flipper</h2>
+      <h3 id="header-color-code">#FFFFFF</h3>
+    </header>
+    <main id="main" class="grid content-center h-[76vh]">
+      <button
+        class="bg-transparent border border-solid border-gray-500 p-2 w-auto mx-auto rounded-lg shadow-2xl hover:bg-[rgba(0,0,0,0.5)] hover:outline-none hover:border-none transition-all duration-200 ease-linear"
+      >
+        Change background
+      </button>
+    </main>
+    <footer
+      id="footer"
+      class="relative bottom-0 text-center m-4 p-4 h-[5vh]"
+    ></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

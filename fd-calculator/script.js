@@ -27,5 +27,4 @@ const fdCalculator = () => {
     result.classList.add("text-white")
     result.innerHTML = `Your Interest rate is ${rate}`
     return
-
 }

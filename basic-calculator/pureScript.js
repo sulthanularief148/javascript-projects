@@ -1,21 +1,18 @@
 // Create HTML structure
+document.addEventListener("DOMContentLoaded", () => {
+    
+})
 const html = document.createElement("html");
 const head = document.createElement("head");
+const script = document.createElement("script")
+script.src = "https://cdn.tailwindcss.com"
+head.appendChild(script)
 const body = document.createElement("body");
 const title = document.createElement("title");
-const script = document.createElement("script");
-script.src = "https://cdn.tailwindcss.com"
-script.onload = () => {
-    console.log("Tailwind css Loaded");
-
-}
-
 title.textContent = "Pure JS";
 head.appendChild(title);
-head.appendChild(script)
 html.appendChild(head);
 html.appendChild(body);
-
 body.classList.add("bg-[rgba(184,207,141,0.65)]")
 // Main Wrapper
 const calculatorWrapper = document.createElement("div");
@@ -57,7 +54,6 @@ Operator.classList.add("h-8", "w-full", "rounded-lg", "outline-none");
     option.textContent = op;
     Operator.appendChild(option);
 });
-console.log(Operator.options[Operator.selectedIndex].value)
 fields.appendChild(Operator);
 document.replaceChild(html, document.documentElement);
 
