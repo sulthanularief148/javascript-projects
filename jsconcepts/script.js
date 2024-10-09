@@ -233,20 +233,20 @@
 
 // If-Else condition
 
-const age = 17;
-const gender = "male"
-if (age >= 18)
-  console.log("You are eligible for vote")
-else
-  console.log("You are not eligible for vote")
+// const age = 17;
+// const gender = "male"
+// if (age >= 18)
+//   console.log("You are eligible for vote")
+// else
+//   console.log("You are not eligible for vote")
 
-if (age >= 18 && gender == "male")
-  console.log("You are eligible for roller coaster ride")
-else
-  console.log("You are not eligible for roller coaster ride")
+// if (age >= 18 && gender == "male")
+//   console.log("You are eligible for roller coaster ride")
+// else
+//   console.log("You are not eligible for roller coaster ride")
 
 
-const videoElement = document.getElementById("videoElement");
+// const videoElement = document.getElementById("videoElement");
 
 // if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 //     navigator.mediaDevices.getUserMedia({ video: true, audio: true })
@@ -282,9 +282,31 @@ const videoElement = document.getElementById("videoElement");
 //   });
 
 
+const arr = ["ECE", "CSE", "IT", "EEE", "MECH", "CIVIL"];
+// for (dept of arr)
+//   console.log(dept)
 
 
+const department = document.getElementById("department");
+// arr.forEach((op) => {
+//   const option = document.createElement("option");
+//   option.value = op;
+//   option.textContent = op
+//   department.appendChild(option)
+// })
 
+console.log("For loop Executed")
+for (i = 0; i < arr.length; i++) {
 
+  const option = document.createElement("option");
+  option.value = arr[i];
+  option.textContent = arr[i]
+  department.appendChild(option)
+  console.log(arr[i])
 
+}
 
+console.log("For loop End")
+
+// Function Declaration
+// Function  Expression

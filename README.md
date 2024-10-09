@@ -596,3 +596,15 @@ Feel free to ask if you need further details or examples on any specific section
 - Color Flipper
 - Digital Clock
 - Todo List
+
+## For Javascript coding Practice
+
+- https://edabit.com/challenges/javascript
+- https://www.hackerrank.com/domains/javascript
+- https://www.codewars.com/collections/javascript
+- https://javascript.info/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- https://www.w3schools.com/js/DEFAULT.asp
+
+
+
