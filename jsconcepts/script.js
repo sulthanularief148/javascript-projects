@@ -295,18 +295,18 @@ const department = document.getElementById("department");
 //   department.appendChild(option)
 // })
 
-console.log("For loop Executed")
-for (i = 0; i < arr.length; i++) {
+// console.log("For loop Executed")
+// for (i = 0; i < arr.length; i++) {
 
-  const option = document.createElement("option");
-  option.value = arr[i];
-  option.textContent = arr[i]
-  department.appendChild(option)
-  console.log(arr[i])
+//   const option = document.createElement("option");
+//   option.value = arr[i];
+//   option.textContent = arr[i]
+//   department.appendChild(option)
+//   console.log(arr[i])
 
-}
+// }
 
-console.log("For loop End")
+// console.log("For loop End")
 
 // Function Declaration
 // Function  Expression
