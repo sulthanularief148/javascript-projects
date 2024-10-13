@@ -49,3 +49,20 @@ d(function () {
 }, "Arief");
 
 // Callback Functions
+
+
+
+
+// Example Program for Functions
+// 1.
+function toCelcius(farenheit) {
+    return (farenheit - 32) * 5 / 9;
+}
+let celcius = toCelcius(70)
+console.log(celcius);
+
+
+// 2
+const cmToInches = (centimeters) => {
+    return Math.floor(centimeters * 0.3937)
+}
