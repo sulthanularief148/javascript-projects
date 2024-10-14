@@ -42,7 +42,7 @@ console.log(addition(1, 2), "First Class Function")
 
 const d = function firstClassAsAnArgument(param, name) {
     param() + console.log(`${name}`)
-
+    
 }
 d(function () {
     console.log("Hello");
