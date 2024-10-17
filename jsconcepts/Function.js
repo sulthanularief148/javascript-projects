@@ -24,6 +24,7 @@ let c = function myFunction() {
     console.log(myFunction)
 }
 console.log(c())
+// console.log(c(), "named Function")
 
 // First Class Function
 // The ability of functions to be used as values and passed as an arguments to the another functions and returned from the function this ability is known as First class function
@@ -42,13 +43,28 @@ console.log(addition(1, 2), "First Class Function")
 
 const d = function firstClassAsAnArgument(param, name) {
     param() + console.log(`${name}`)
-    
+
 }
 d(function () {
     console.log("Hello");
 }, "Arief");
 
-// Callback Functions
+// Callback Functions - A callback is a function passed as an argument to another function
+const arrays = [1, 2, 3, 4]
+
+function sub(demo) {
+    return demo
+}
+sub(arrays)
+
+const namedFunction = function (demo) {
+    console.log(demo())
+}
+const name = function () {
+    console.log("Function called callback")
+}
+
+console.log(namedFunction(name))
 
 
 
