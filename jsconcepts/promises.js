@@ -57,29 +57,7 @@ const myPromise = new Promise((resolve, reject) => {
 
 
 
-// Tatkal booking example
-// const tatkalBooking = () => {
-//     return new Promise((resolve, reject) => {
-//         let tatkal = 1;
 
-//         if (tatkal == true) {
-//             console.log(tatkal)
-//             resolve()
-//         } else {
-//             reject()
-//         }
-//     })
-// }
-
-// tatkalBooking().then(
-//     () => {
-//         console.log("Tatkal Booked Successfully")
-//     }
-// ).catch(
-//     () => {
-//         console.log("Tatkal booking failed")
-//     }
-// )
 
 // Promise Methods:
 /*
@@ -122,3 +100,78 @@ const randomJoke = async () => {
 
 }
 console.log(randomJoke())
+
+
+
+
+function tossCoin() {
+    return new Promise((resolve, reject) => {
+        const coin = Math.floor(Math.random() * 2)
+        console.log(coin)
+        if (coin == 0)
+            resolve()
+        else
+            reject()
+    })
+}
+tossCoin()
+    .then(() => console.log("Congrats, It's head!"))
+    .catch(() => console.log("Sorry, You lost! It's tail")
+    )
+
+// Tatkal booking example
+const tatkalBooking = () => {
+    return new Promise((resolve, reject) => {
+        let tatkal = 0;
+
+        if (tatkal == true) {
+            console.log(tatkal)
+            resolve()
+        } else {
+            reject()
+        }
+    })
+}
+
+tatkalBooking().then(
+    () => {
+        console.log("Tatkal Booked Successfully")
+    }
+).catch(
+    () => {
+        console.log("Tatkal booking failed")
+    }
+)
+
+// Freinds Reached Home Successfull or Not
+
+
+const friend1 = new Promise((resolve, reject) => {
+    const reached = true;
+    if (reached)
+        setTimeout(resolve, 1000, "Arief Reached Successfully!")
+    else
+        reject("Arief Not Reached home")
+
+})
+
+const friend2 = new Promise((resolve, reject) => {
+    const reached = false
+    if (reached)
+        setTimeout(resolve, 1000, "Anees Reached Successfully!")
+    else
+        reject("Anees Not Reached home")
+
+})
+const friend3 = new Promise((resolve, reject) => {
+    const reached = true
+    if (reached)
+        setTimeout(resolve, 1000, "Tamizh Reached Successfully!")
+    else
+        reject("Tamizh Not Reached home")
+
+})
+
+Promise.all([friend1, friend2, friend3])
+    .then(messgae => console.log(messgae))
+    .catch(message => console.log(message))

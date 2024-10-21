@@ -11,10 +11,10 @@ const getJokeApi = () => {
             .then(response => {
                 if (response.ok) {
                     console.log("Success");
-                    return response.json(); // Parse the JSON if the response is successful
+                    return response.json(); 
                 } else {
                     console.log("Error fetching joke");
-                    return null; // Handle error cases where response is not ok
+                    return null;
                 }
             })
             .then(data => {

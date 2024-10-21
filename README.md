@@ -589,11 +589,11 @@ Feel free to ask if you need further details or examples on any specific section
 - Centimeter to Inches - Done
 - word Count - Done
 - FD interest rate calculator - Done
-- Select States
+- Select States - Done
 - Basic Calculator Using Vanilla Js without HTML
-- Job Eligibility Checker
+- Job Eligibility Checker - Done
+- Color Flipper - Done
 - Currency Converter
-- Color Flipper
 - Digital Clock
 - Todo List
 
