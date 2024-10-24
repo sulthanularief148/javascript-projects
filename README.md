@@ -595,6 +595,7 @@ Feel free to ask if you need further details or examples on any specific section
 - Color Flipper - Done
 - Currency Converter
 - Digital Clock
+- Weather App
 - Todo List
 
 ## For Javascript coding Practice
@@ -605,6 +606,3 @@ Feel free to ask if you need further details or examples on any specific section
 - https://javascript.info/
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript
 - https://www.w3schools.com/js/DEFAULT.asp
-
-
-

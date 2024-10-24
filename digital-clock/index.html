@@ -4,18 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Clock</title>
-    <script src="cd.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+        background-size: 200% 200%;
+        animation: gradient 10s ease infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-        <span id="hour">00</span>
-        <span>:</span>
-        <span id="mins">00</span>
-        <span>:</span>
+  <body class="flex items-center justify-center min-h-screen">
+    <!-- Digital Clock -->
+    <div class="bg-black p-10 rounded-lg shadow-lg">
+      <div class="flex space-x-4 text-6xl font-mono text-white">
+        <span id="hour">00</span><span>:</span> <span id="mins">00</span
+        ><span>:</span>
         <span id="sec">00</span>
-        <span>:</span>
-        <span id="ampm">AM</span>
+        <span id="ampm" class="ml-3 text-4xl">AM</span>
       </div>
     </div>
     <script src="script.js"></script>
