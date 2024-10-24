@@ -1,26 +1,21 @@
 let btn = document.getElementById("convert");
 let amount = document.getElementById("amount");
 let result = document.getElementById("result")
+const select = document.querySelectorAll(".currency");
+
+
 
 fetch('https://api.frankfurter.app/currencies')
     .then((response) => response.json())
     .then((currency) => displayCurrecncy(currency))
     .catch(error => error)
 
-
-const select = document.querySelectorAll(".currency");
-console.log(select)
-
 function displayCurrecncy(currency) {
-
     const curr = Object.entries(currency)
     for (let i = 0; i < curr.length; i++) {
-
         const option = `<option value=${curr[i][0]}>${curr[i][0]}</option>`
-
         select[0].innerHTML += option
         select[1].innerHTML += option
-
     }
 }
 
@@ -46,5 +41,3 @@ async function convert(from, to, amount) {
             result.value = convertedAmount
         });
 }
-
-// convert("EUR", "USD", 10);

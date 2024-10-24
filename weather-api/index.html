@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Weather</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("https://img.freepik.com/free-vector/realistic-background-monsoon-season_23-2150428848.jpg?t=st=1729747437~exp=1729751037~hmac=3d001528ce505f2631a415f8f8c802d8573f4a0bb93df34e071aeabc46d638d0&w=1060")
+            no-repeat center fixed;
+        background-size: cover;
+        backdrop-filter: blur(6px);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center">
+    <div
+      class="bg-white/90 p-10 rounded-lg shadow-lg max-w-md w-full space-y-8"
+    >
+      <div class="flex justify-center items-center space-x-6">
+        <img
+          class="w-24"
+          id="weather-icon"
+          src="../assets/demoWeather.png"
+          alt="Weather Icon"
+        />
+        <div class="flex flex-col justify-center font-bold text-gray-800">
+          <h2 id="temp" class="text-4xl text-gray-700">300°</h2>
+          <h2 id="main" class="text-2xl text-gray-600">Cloudy</h2>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold text-center text-gray-800 mb-4">
+          Get Current Weather
+        </h1>
+        <div class="space-y-4">
+          <input
+            type="text"
+            id="city"
+            placeholder="Enter city name"
+            class="outline-none block w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+          />
+        </div>
+
+        <div class="mt-6">
+          <button
+            class="w-full p-3 bg-blue-500 text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 rounded-lg transition duration-300"
+            id="btn"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
